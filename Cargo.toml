@@ -1,0 +1,11 @@
+[dependencies]
+
+[package]
+authors = ["liblaf <i@liblaf.me>"]
+description = "All-in-one CLI for package managers"
+edition = "2021"
+license = "MIT"
+name = "pacify"
+readme = "README.md"
+repository = "https://github.com/liblaf/pacify"
+version = "0.0.0"
