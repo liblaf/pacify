@@ -1,0 +1,14 @@
+[Install]
+WantedBy = default.target
+
+[Service]
+ExecStartPre = -auth-thu --daemonize deauth
+ExecStartPre = -auth-thu --daemonize auth
+ExecStartPre = -auth-thu --daemonize login
+ExecStart    = auth-thu --daemonize online
+Restart      = always
+RestartSec   = 5
+
+[Unit]
+Description           = Authenticating utility for auth.tsinghua.edu.cn
+StartLimitIntervalSec = 0

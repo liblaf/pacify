@@ -112,7 +112,7 @@ repos:
   - repo: https://github.com/scop/pre-commit-shfmt
     rev: v3.7.0-3
     hooks:
-      - id: shfmt
+      - id: shfmt-src
         files: (\.sh|\.zsh|\.zsh-theme|envrc|zshrc)(\.tmpl)?$
         types:
           - text
