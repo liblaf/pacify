@@ -4,7 +4,7 @@ set -o nounset
 set -o pipefail
 
 function has() {
-  type "$1" &>/dev/null
+  type "$1" &> /dev/null
 }
 
 if has https; then
